@@ -25,17 +25,19 @@
   </ul>
 </div>
 
-<div class='section' id="home" style="background-image:url('files/background.jpg');background-repeat: no-repeat; background-position:center top; height:900px">
-  <div id='canvas'>
-    <h1 style="font-size:3em; font-family:Gloria Hallelujah, serif">Hi, I'm yuwei</h2>
-    <h2 style="line-height:3em">A Front-End Developer</h2>
-    <p style="line-height:2em">&nbsp;</p>
-    <div class='button'><a href="./Resume_Yuwei Wang.pdf" target="_blank">RESUME</a></div>
-    <p style="line-height:1em">&nbsp;</p>
-    <div class='button'><a href="https://www.linkedin.com/profile/view?id=315611518" target="_blank">LINKEDIN</a></div>
-  </div>
-  <div id='motto'>
-    <h3>"The best time to plant a tree is a decade ago, and <b>NOW</b>."</h3>
+<div class='section' id="home" style="height:900px">
+  <div id='background-img'style="background-image:url('files/background.jpg');background-repeat: no-repeat; background-position:center top; height:900px;">
+    <div id='canvas'>
+      <h1 style="font-size:3em; font-family:Gloria Hallelujah, serif">Hi, I'm yuwei</h2>
+      <h2 style="line-height:3em; color:#2F0556;">A Front-End Developer</h2>
+      <p style="line-height:2em">&nbsp;</p>
+      <div class='button'><a href="./Resume_Yuwei Wang.pdf" target="_blank">RESUME</a></div>
+      <p style="line-height:1em">&nbsp;</p>
+      <div class='button'><a href="https://www.linkedin.com/profile/view?id=315611518" target="_blank">LINKEDIN</a></div>
+    </div>
+    <div id='motto'>
+      <h3>"The best time to plant a tree is a decade ago...and <b>NOW</b>."</h3>
+    </div>
   </div>
 </div>   
 
@@ -58,7 +60,7 @@
 
     <li class='cube'>
         <h1>I wanna...</h1>
-        <h3>Work in a great company</h3>
+        <h3>work in a great company</h3>
         <h3 style="line-height:2em;">···</h3>
         <p>Good Chemistry<br/>Make Contribution<br/>Personal Development<br/>etc.<p> 
     </li>
@@ -68,40 +70,55 @@
 <div class='section' id="projects">
   <h1 class="title">~ PROJECTS ~</h1>
   <h3>My Works</h3>
+
     <ul class="subsection">
       <li class="project">
-        <ul> 
-        <li class="project1"><img src="files/project-1.jpg"/><h2>Oral History Project Website</h2></li>
-        <li class="project2"><p></p></li>
-        </ul>
+        <a href="http://depts.washington.edu/oralhist/" target="_blank">
+          <ul> 
+            <li class="project1"><img src="files/project-1.jpg"/><h2>Oral History Project Website</h2></li>
+            <li class="project2"><p></p></li>
+          </ul>
+        </a>
       </li>
+
       <li class="project">
-        <ul> 
-        <li class="project1"><img src="files/project-1.jpg"/><h2>Javascript Applications</h2></li>
-        <li class="project2"><p></p></li>
-        </ul>
+        <a href="" target="_blank">
+          <ul> 
+            <li class="project1"><img src="files/project-1.jpg"/><h2>Javascript Applications</h2></li>
+            <li class="project2"><p></p></li>
+          </ul>
+        </a>
       </li>
     </ul>
+
     <ul class="subsection">
       <li class="project">
-        <ul> 
-        <li class="project1"><img src="files/project-1.jpg"/><h2>Personal Website</h2></li>
-        <li class="project2"><p></p></li>
-        </ul>
+        <a href="" target="_blank">
+          <ul> 
+            <li class="project1"><img src="files/project-1.jpg"/><h2>Personal Website</h2></li>
+            <li class="project2"><p></p></li>
+          </ul>
+        </a>
       </li>
+
       <li class="project">
-        <ul> 
-        <li class="project1"><img src="files/project-1.jpg"/><h2>Book Interior Layout Design</h2></li>
-        <li class="project2"><p></p></li>
-        </ul>
+        <a href="" target="_blank">
+          <ul> 
+            <li class="project1"><img src="files/project-1.jpg"/><h2>Book Interior Layout Design</h2></li>
+            <li class="project2"><p></p></li>
+          </ul>
+        </a>
       </li>
     </ul>
+
     <ul class="subsection">
       <li class="project">
-        <ul> 
-        <li class="project1"><img src="files/project-1.jpg"/><h2>Wordpress Template</h2></li>
-        <li class="project2"><p>Still in working...</p></li>
-        </ul>
+        <a href="" target="_blank">
+          <ul> 
+            <li class="project1"><img src="files/project-1.jpg"/><h2>Wordpress Template</h2></li>
+            <li class="project2"><p>Still in working...</p></li>
+          </ul>
+        </a>
       </li>
     </ul>
 </div>
@@ -143,7 +160,7 @@
 </div>
 
 <div id='footer'>
-  <p><span>yuweiw823@gmail.com</span>　·　<span>(206)941-4907</span>　·　<span>www.yuwei-vera.com</span></p>
+  <p><span>yuweiw823@gmail.com</span>　·　<span>(206)941-4907</span>　·　<span><a href="index.html">www.yuwei-vera.com</a></span></p>
 </div>
 
 
@@ -163,6 +180,7 @@ var pos = null;
 var timer = null;
 var moveHeight = null;
 mainnav = document.getElementById("mainnav");
+
 window.onscroll=scroll_ad;
 function scroll_ad(){
   scrollTop = document.documentElement.scrollTop+document.body.scrollTop;
@@ -176,8 +194,9 @@ function scroll_ad(){
 }
 
 window.onload = function () {
-  alert("Hey, this site is still in construction!\nBut you can still explore something here ^_^")
+  alert("Hey, this site is in construction!\nBut you can still explore something here ^_^")
 }
+
 </script>
 
 </body>
