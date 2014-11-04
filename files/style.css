@@ -206,9 +206,13 @@ img {
 
 .project2 {
   display: block;
-  width:330px;
+  width:336px;
   height:130px;
   padding: 20px 30px;
+}
+
+.project2:hover{
+  outline: 2px dashed #FF3F3F;
 }
 
 .project2 p{
@@ -231,12 +235,23 @@ img {
   display: block;
   padding:10px 20px;   /*padding必须写在子元素里*/
   text-align:left;
+  border-bottom: 1px dotted #FF3F3F;
+  font-weight: 300;
 }
 
 .reading li:first-child{
   font-family:"Gloria Hallelujah", sans-serif;
   background-color: #FF3F3F;
   color: #FFFFFF;
+}
+
+.reading li a{
+  text-decoration: none;
+  color:#555555;
+}
+.reading li a:hover{
+
+  color:#FF3F3F;
 }
 
 
