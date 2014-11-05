@@ -20,7 +20,7 @@
   padding: auto;
 }
 
-.subsection li{
+.subsection li {
   list-style: none;
 }
 
@@ -70,7 +70,7 @@
       Fonts
 ---------------*/
 
-h1, h2, h3, h4, h5, h6, p ,li, textarea{
+h1, h2, h3, h4, h5, h6, p ,li, textarea, input{
   font-family: 'Source Sans Pro', sans-serif;
   color: black;
   line-height: 140%;
@@ -187,6 +187,10 @@ img {
   text-decoration: none;
 }
 
+.project:hover {
+outline: 2px dashed #FF3F3F;
+}
+
 .project1 img {
   display:inline-block;
   height:70px;
@@ -211,10 +215,6 @@ img {
   padding: 20px 30px;
 }
 
-.project2:hover{
-  outline: 2px dashed #FF3F3F;
-}
-
 .project2 p{
   text-align: left;
   font-weight: 300;
@@ -235,8 +235,9 @@ img {
   display: block;
   padding:10px 20px;   /*padding必须写在子元素里*/
   text-align:left;
-  border-bottom: 1px dotted #FF3F3F;
+  border-top: 1px dotted #FF3F3F;
   font-weight: 300;
+  color:#555555;
 }
 
 .reading li:first-child{
@@ -250,12 +251,36 @@ img {
   color:#555555;
 }
 .reading li a:hover{
-
   color:#FF3F3F;
 }
 
+.links li {
+  display: inline-block;   /*与上一层父元素配合使用*/
+  width:80px;
+  height:80px;
+  margin:50px 10px 10px;
+  text-decoration: none;
+  text-align: center; 
+  vertical-align: middle;
+}
 
-textarea {
+.links li a:hover{
+  margin:10px;
+}
+
+
+.linksname li {
+  display: inline-block;   /*与上一层父元素配合使用*/
+  width:80px;
+  margin:15px 10px;
+  text-decoration: none;
+  text-align: center; 
+  vertical-align: middle;
+}
+
+
+
+textarea, input{
   display: block;
   width: 500px;
   margin: 5px auto;
@@ -343,7 +368,7 @@ textarea {
   right: -0.375em;
   top: 1.5em;
   height: 0.25em;
-  width: 0.2em;
+  width: 0.25em;
   background: #FF3F3F;
 }
 

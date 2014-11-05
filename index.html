@@ -9,8 +9,7 @@
    <link href='http://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
    <link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
    <link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
-   <!--script src="jquery.js" type="text/javascript"></script>
-   <script src="script.js"></script-->
+   <script src="jquery.js" type="text/javascript"></script>
 </head>
 
 <body style="background-image:url('files/patterns.png') ;background-attachment: fixed;";>
@@ -36,7 +35,7 @@
       <div class='button'><a href="https://www.linkedin.com/profile/view?id=315611518" target="_blank">LINKEDIN</a></div>
     </div>
     <div id='motto'>
-      <h3>"The best time to plant a tree is a decade ago, and <b>PRESENT</b>."</h3>
+      <h3>"The best time to plant a tree is a decade ago, and <b>AT PRESENT</b>."</h3>
     </div>
   </div>
 </div>   
@@ -128,7 +127,6 @@
   <h3>My Reading List</h3>
   <ul class='reading'>
     <li>I have read....</li>
-    <li>Learn Python The Hard Way, by Zed A. Shaw</li>
     <li>Professional JavaScript for Web Developers 3rd Edition, by Nicholas C. Zakas</li>
     <li>JavaScript- The Good Parts, by Douglas Crockford</li>
     <li>DOM Scripting - Web Design with JavaScript and the Document Object Model, 2nd Edition, By Jeremy Keith / Jeffrey Sambells</li>
@@ -138,12 +136,14 @@
   </ul>
 
   <ul class='reading'>
-    <li>I'm still reading'....</li>
+    <li>I'm still reading....</li>
     <li>CSS Mastery: Advanced Web Standards Solutions, by Andy Budd / Simon Collison / Cameron Moll </li>
     <li>Secrets of the JavaScript Ninja, by John Resig / Bear Bibeault</li>
     <li>PPK on Javascript, by Peter-Paul Koch</li>
     <li>图解TCP/IP by  竹下隆史 / 村山公保 / 荒井透 / 苅田幸雄</li>
     <li>锋利的jquery(第2版), by 单东林 / 张晓菲 / 魏然</li>
+    <li>PPK on Javascript, by Peter-Paul Koch</li>
+    <li>JavaScript: The Definitive Guide, 6th Edition by David Flanagan</li>
   </ul>
 
   <ul class='reading'>
@@ -151,58 +151,75 @@
     <li><a href="#">Pro JavaScript Techniques, by John Resig</a></li>
     <li>Ajax基础教程 by Rayn Asleson / Nathanial T. Schutta</li>
     <li>iOS开发指南：从零基础到App Store上架 by 关东升</li>
-    <li>etc...</li>
+    <li style="font-weight:400; font-size:120%; font-family: Gloria Hallelujah, sans-serif; color:#FF3F3F; text-align: right;">Anyway... Keep Learning and Stay Curious ^_^</li>
   </ul>
 </div>
 
 <div class='section' id="contact-me">
   <h1 class="title">~ CONTACT ME ~</h1>
-  <h3>Hi, New Friend!</h3>
-  <p style="line-height:50px;">&nbsp;</p>
-  <textarea rows="1" cols="50" placeholder="Name"></textarea>
-  <textarea rows="1" cols="50" placeholder="Email"></textarea>
-  <textarea rows="1" cols="50" placeholder="Subject"></textarea>
-  <textarea rows="5" cols="50" placeholder="Message"></textarea>
+  <h3>Hi, New Friend! You Can Find Me Here!</h3>
+  <div class='subsection'>
+    <ul>
+      <li>
+        <ul class='links'>
+          <li><a href="mailto:yuweiw823@gmail.com?Subject=Hello%20yuwei"><img src="files/icon-email.png"/></a></li>
+          <li><a href="https://github.com/yuweiw823" target="_blank"><img src="files/icon-github.png"/></a></li>
+          <li><a href="https://www.behance.net/yuweiw823" target="_blank"><img src="files/icon-behance.png"/></a></li>
+          <li><a href="http://weibo.com/fanruovera" target="_blank"><img src="files/icon-weibo.png"/></a></li>
+          <li><a href="http://www.zhihu.com/people/yuwei-w" target="_blank"><img src="files/icon-zhihu.png"/></a></li>
+        </ul>
+      </li>
+      <li>
+        <ul class='linksname'>
+          <li>E-mail</li>
+          <li>Github</li>
+          <li>Behance</li>
+          <li>weibo</li>
+          <li>zhihu</li>   
+        </ul>
+      </li> 
+    </ul>
+  </div>
+  <!--p style="line-height:50px;">&nbsp;</p>
+  <input id="sendName" placeholder="Name" type="text" tabindex="1" required autofocus/>
+  <input id="sendEmail" placeholder="Email" type="email" tabindex="2" required/>
+  <input id="sendSubject" placeholder="Subject" type="text" tabindex="3"/>
+  <textarea id="sendMessage" rows="5" cols="50" placeholder="Message"></textarea>
   <div class="button" id="send" style="margin-top:20px">SEND</div>
-</div>
+</div-->
 
 <div id='footer'>
   <p><span>yuweiw823@gmail.com</span>　·　<span>(206)941-4907</span>　·　<span><a href="index.html">www.yuwei-vera.com</a></span></p>
 </div>
 
 
-
-
-<script src="slide_right.js" type="text/javascript"></script>
+<script src="files/mainNavScroll.js" type="text/javascript"></script>
 <script>
-var speed = 30;
-var scrollTop = null;
-var hold = 0;
-var mainnav;
-var pos = null;
-var timer = null;
-var moveHeight = null;
-mainnav = document.getElementById("mainnav");
-
-window.onscroll=scroll_ad;
-function scroll_ad(){
-  scrollTop = document.documentElement.scrollTop+document.body.scrollTop;
-  pos = scrollTop - mainnav.offsetTop;
-  pos = pos/10;
-  moveHeight = pos>0?Math.ceil(pos):Math.floor(pos);
-  if(moveHeight!=0){
-    mainnav.style.top = mainnav.offsetTop+moveHeight+"px";
-    setTimeout(scroll_ad,speed);
-  }
-}
-
+var moveItem = document.getElementById("mainnav");
+window.onscroll = scroll_ad;
 window.onload = function () {
   alert("Hey, this site is in construction!\nBut something still can be ecplored here ^_^")
 }
-
 /*$(document).ready(function() {
-    $("#catagory").paddingList({ animatePadding: 30, hoverColor: "Red" });
+    $(".reading li").paddingList({ animatePadding: 30, hoverColor: "Red" });
 });*/
+
+(function() {
+ 
+    var sendName = document.getElementById('sendName');
+    var sendEmail = document.getElementById('sendEmail');
+    var sendSubject = document.getElementById('sendSubject');
+    var sendMessage = document.getElementById('sendMessage');
+
+    var send = document.getElementById('send');
+    if(sendEmail) {
+        send.onclick = function () {
+            this.innerHTML = '...Sending';
+
+        }
+    }
+ 
+})();
 </script>
 
 </body>
