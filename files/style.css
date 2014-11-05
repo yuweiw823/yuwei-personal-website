@@ -252,17 +252,16 @@ img {
 .reading {
   width:500px;
   margin:50px auto 10px;
-
   background-color: rgba(255,255,255,.5);
 }
 
 .reading li {
-  display: block;
   padding:10px 20px;   /*padding必须写在子元素里*/
   text-align:left;
   border-top: 1px dotted #FF3F3F;
   font-weight: 300;
   color:#555555;
+  list-style: none;
 }
 
 .reading li:first-child{
@@ -272,12 +271,22 @@ img {
 }
 
 .reading li a{
+  display: block;
   text-decoration: none;
+  text-align:left;
   color:#555555;
+  -webkit-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-outs;
+  -moz-transition: all .3s ease-in-outs;
+  -o-transition: all .3s ease-in-outs;
+  transition: all .3s ease-in-outs;
 }
 .reading li a:hover{
   color:#FF3F3F;
+  text-indent: 10px;
 }
+
+
 
 .links li {
   display: inline-block;   /*与上一层父元素配合使用*/
