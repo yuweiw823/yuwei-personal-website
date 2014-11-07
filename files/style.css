@@ -161,7 +161,7 @@ img {
 }
 
 .cube:hover{
-  outline: 5px dashed #FF3F3F;
+  outline: 4px dashed #FF3F3F;
   width: 300px;
   height: 220px;
   margin: 40px 40px 0;
@@ -250,7 +250,7 @@ img {
       Reading
 ---------------*/
 .reading {
-  width:500px;
+  width:600px;
   margin:50px auto 10px;
   background-color: rgba(255,255,255,.5);
 }
@@ -321,7 +321,7 @@ img {
 
 .linksname li a{
   text-decoration: none;
-  color:#888888;
+  color:#333333;
 }
 
 
