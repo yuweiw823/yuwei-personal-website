@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,500);
-@import url(http://fonts.googleapis.com/css?family=Lobster+Two);
+@import url(http://fonts.googleapis.com/css?family=Gloria+Hallelujah);
 /* -------------
      Layouts
 ---------------*/
@@ -27,7 +27,6 @@
 .clear {
   clear: both;
 }
-
 
 .title{
   display: block;
@@ -64,14 +63,12 @@
 
 }
 
-
-
 /* -------------
       Fonts
 ---------------*/
 
 h1, h2, h3, h4, h5, h6, p ,li, textarea, input{
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Source Sans Pro', Tahoma, sans-serif;
   color: black;
   line-height: 140%;
   text-align: center;
@@ -105,7 +102,6 @@ img {
   padding:20px auto;
   width: 10em;
   height:2.8em;
-
 }
 
 .button a{
@@ -165,8 +161,6 @@ img {
   width: 300px;
   height: 220px;
   margin: 40px 40px 0;
-  /*width: 280px;
-  height: 220px;*/
 }
 
 /* -------------
@@ -245,7 +239,6 @@ img {
   font-weight: 300;
   font-style: italic;
 }
-
 /* -------------
       Reading
 ---------------*/
@@ -286,8 +279,6 @@ img {
   text-indent: 10px;
 }
 
-
-
 .links li {
   display: inline-block;   /*与上一层父元素配合使用*/
   width:80px;
@@ -324,7 +315,6 @@ img {
   color:#333333;
 }
 
-
 textarea, input{
   display: block;
   width: 500px;
@@ -356,6 +346,7 @@ textarea, input{
 #footer a:hover{
   color:#ffffff;
 }
+
 /*--------------- 
  Main Navigation
 ----------------*/
