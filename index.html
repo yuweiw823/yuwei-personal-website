@@ -8,15 +8,36 @@
 	<link rel="shortcut icon" href="http://www.yuwei-vera.com/blog/wp-content/uploads/2015/02/Saber.jpg">
 	<link rel="stylesheet" href="files/jquery.fullPage.css">
 	<link rel="stylesheet" href="files/style.css">
-	<script type="text/javascript" src="files/jquery.min.js"></script>
-	<script type="text/javascript" src="files/TypeWitter.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<!--script type="text/javascript" src="files/jquery.scrollme.js"></script--> 
 	<script type="text/javascript" src="files/jquery.fullPage.min.js"></script>
 	<script>
 	$(function(){
 		$('#dowebok').fullpage();
 	});
+	window.onload = function () {  var typewriterArr = [];
+	  var typewriterDisplay = "";
+	  var speed = 100;
+	  var content = document.getElementById("logoinput").innerHTML;
+	  var display = document.getElementById("logooutput");
+	  typeWriter(content, display);
+	  function typeWriter(tThis, output){
+	    for (var j=0; j<tThis.length; j++){
+	      typewriterArr += tThis.charAt(j); //先把所有的string里char推入一个数组
+	    }
+	    var i=0;
+	    var timer = function(){         //每次增加1
+	      if (i<typewriterArr.length){
+	        typewriterDisplay += typewriterArr[i];
+	        output.innerHTML=typewriterDisplay;
+	        i++;
+	      } 
+	    }
+	    setInterval(timer, speed);
+	  }
+	}
 	</script>
+
 	<style>
 		#home { background: url('files/background-mosaic1.png') 50%;}
 	</style>
@@ -38,7 +59,7 @@
 			<div id='canvas'>
 				<h1 style="font-size:3em; font-family:Gloria Hallelujah, serif">Hi, I'm yuwei</h2>
 				<h2 id='logoinput' style='display:none'>Learn More, Code More, And Create More</h2>
-				<h2 id='logooutput' style="line-height:3em; color:#2F0556;">&nbsp;</h2>
+				<h2 id='logooutput' style="line-height:1.2em; color:#2F0556; margin:1em auto; font-size:22px; font-weight:400;">&nbsp;</h2>
 				<p style="line-height:2em">&nbsp;</p>
 				<div class='button'><a href="./Resume_Yuwei Wang.pdf" target="_blank">RESUME</a></div>
 				<p style="line-height:1em">&nbsp;</p>
@@ -55,7 +76,7 @@
 						<h1>I have</h1>
 						<h3>Diverse Experience</h3>
 						<h3 style="line-height:2em;">···</h3>
-						<p>Chrome Extension Developer<br/>Website Developer<br/>Book Layout Designer<br/>M.S. in Industrial Engineering<br/><br/></p>
+						<p>Chrome Extension Developer<br/>Website Developer<br/>Book Layout Designer<br/>M.S. in Industrial Engineering<br/></p>
 				</li>
 				<li class='cube cube-anime'>
 						<h1>I'm skilled at...</h1>
@@ -72,20 +93,20 @@
 			</ul>
 
 			<ul class="subsection">
-				<li class='cube'>
-				<svg xmlns="http://www.w3.org/2000/svg" class='aboutme-img' width="140" height="140" viewBox="0 0 1024 1024">
+				<li class='cube cube-img'>
+				<svg xmlns="http://www.w3.org/2000/svg"  width="140" height="140" viewBox="0 0 1024 1024">
 					<path class="sideicon" d="M384 640l128-64 448-448-64-64-448 448-64 128zM289.3 867.098c-31.632-66.728-65.666-100.762-132.396-132.394l99.096-272.792 128-77.912 384-384h-192l-384 384-192 640 640-192 384-384v-192l-384 384-77.912 128z" fill="#FF3F3F"></path>
 				</svg>
 				</li>
 
-				<li class='cube'>
+				<li class='cube cube-img'>
 				<svg xmlns="http://www.w3.org/2000/svg"  width="200" height="160" viewBox="0 0 1152 1024">
 					<path class="sideicon" d="M1088 128h-1024c-35.2 0-64 28.8-64 64v640c0 35.2 28.8 64 64 64h1024c35.2 0 64-28.8 64-64v-640c0-35.2-28.8-64-64-64zM640 256h128v128h-128v-128zM832 448v128h-128v-128h128zM448 256h128v128h-128v-128zM640 448v128h-128v-128h128zM256 256h128v128h-128v-128zM448 448v128h-128v-128h128zM128 256h64v128h-64v-128zM128 448h128v128h-128v-128zM192 768h-64v-128h64v128zM768 768h-512v-128h512v128zM1024 768h-192v-128h192v128zM1024 576h-128v-128h128v128zM1024 384h-192v-128h192v128z" fill="#FF3F3F"></path>
 				</svg>
 				</li>
 
-				<li class='cube'>
-				<svg xmlns="http://www.w3.org/2000/svg"  width="200" height="160" viewBox="0 0 1152 1024">
+				<li class='cube cube-img'>
+				<svg xmlns="http://www.w3.org/2000/svg"  width="160" height="160" viewBox="0 0 1152 1024">
 					<path class="path1" d="M1011.328 134.496c-110.752-83.928-281.184-134.034-455.91-134.034-216.12 0-392.226 75.456-483.16 207.020-42.708 61.79-66.33 134.958-70.208 217.474-3.454 73.474 8.884 154.726 36.684 242.146 94.874-284.384 359.82-507.102 665.266-507.102 0 0-285.826 75.232-465.524 308.192-0.112 0.138-2.494 3.090-6.614 8.698-36.080 48.278-67.538 103.162-91.078 165.328-39.87 94.83-76.784 224.948-76.784 381.782h128c0 0-19.43-122.222 14.36-262.79 55.89 7.556 105.858 11.306 150.852 11.306 117.678 0 201.37-25.46 263.388-80.124 55.568-48.978 86.198-114.786 118.624-184.456 49.524-106.408 105.654-227.010 268.654-320.152 9.33-5.332 15.362-14.992 16.056-25.716s-4.040-21.080-12.606-27.572z" fill="#FF3F3F"></path>
 				</svg>
 				</li>
@@ -102,7 +123,7 @@
 					<a href="https://chrome.google.com/webstore/detail/ilabeeklpmaacpjamehodpkgkjidnmpf" target="_blank">
 						<ul> 
 							<li class="project1" style='background-color: #FFE72E'><h2>Chrome Extension: Lofter Catcher</h2></li>
-							<li class="project2"><img src='files/project1_1.png' class='thumb'><p>A chrome extension for blogging.<br/>As some lofter bloggers like to write serial articles and stories, it might be hard and inconvenien for readers to find all the serial links and get them as a full collection. This extension search in blog titles by serial keyword, extract the contents and render as text format.</p><img src="files/project1_2.jpg" class='medium'></li>
+							<li class="project2"><img src='files/project1_1.png' class='thumb'><p>A chrome extension for blogging.<br/>As some lofter bloggers like to write serial articles and stories, it might be difficult and inconvenien for readers to find all the serial links and get them as a full collection. This extension search in blog titles by serial keyword, extract the specific contents and render as text.</p><img src="files/project1_2.jpg" class='medium'></li>
 						</ul>
 					</a>
 				</li>
@@ -117,7 +138,7 @@
 				<li class="project">
 					<a href="http://depts.washington.edu/oralhist/" target="_blank">
 						<ul> 
-							<li class="project1" style='background-color: #FF4F4F'><h2>Website Operation: Oral History Project</h2></li>
+							<li class="project1" style='background-color: #ff9933'><h2>Website Operation: Oral History Project</h2></li>
 							<li class="project2"><img src='files/project2_1.png' class='thumb'><p>A website for the Oral History Project helping the first generation immigrants from Taiwan and China to share their stories.<br/>I built this site on Wordpress and modified stylesheet codes to make it nicer. Operations I contribute include making flyer, publishing blogs and editing video and audio for the project.</p><img src="files/project2_2.jpg" class='medium'></li>
 						</ul>
 					</a>
@@ -147,10 +168,27 @@
 			
 			<ul class="subsection">
 				<li class="project">
+					<a href="files/project4_2_full.png" target="_blank">
+						<ul> 
+							<li class="project1" style='background-color: #06E0D0'><h2>Webpage Redesign and Code</h2></li>
+							<li class="project2"><img src='files/project4_1.png' class='thumb'><p>Chinese Studies Webpage Redesign and Code<br/>As the Chinese Studies Webpage style was out of date, and the interface was difficult for scholars to find useful resources, I redesigned, reorganized and coded the new webpage for the East Asia Library, UW</p><img src="files/project4_2.jpg" class='medium'></li>
+
+						</ul>
+					</a>
+				</li>
+			</ul>
+			<div style="height:120px"></div>
+		</div>
+
+		<div  id="project5" class='section'>
+			<h1 class="title">~ My Projects ~</h1>
+			
+			<ul class="subsection">
+				<li class="project">
 					<a href="https://www.behance.net/collection/29272163/Book-Interior-Layout-Design" target="_blank">
 						<ul> 
-							<li class="project1" style='background-color: #06E0D0'><h2>Book Interior Layout Design</h2></li>
-							<li class="project2"><img src='files/project4_1.png' class='thumb'><p>My Book Interior Design collections from 2012 for self-publish clients in China.<br/>It was the favourite hobby I have developed during my undergraduate and made me excellent in Adobe Indesign and Photoshop. Almost 40 projects were done cumulatively.</p><img src="files/project4_2.jpg" class='medium'></li>
+							<li class="project1" style='background-color: #ff3366'><h2>Book Interior Layout Design</h2></li>
+							<li class="project2"><img src='files/project5_1.png' class='thumb'><p>My Book Interior Design collections from 2012 for self-publish clients in China.<br/>It was the favourite hobby I have developed during my undergraduate and made me excellent in Adobe Indesign and Photoshop. Almost 40 projects were done cumulatively.</p><img src="files/project5_2.jpg" class='medium'></li>
 						</ul>
 					</a>
 				</li>
